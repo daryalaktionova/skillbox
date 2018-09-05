@@ -1,3 +1,13 @@
 .left {
     background: $blue;
+    color: $white;
+    max-width: 50%;
+    padding: rem(50px) rem(98px) rem(0px) rem(0px);
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.content--left {
+    max-width: 90%;
 }

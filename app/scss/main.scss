@@ -1,5 +1,11 @@
 @import "fonts";
 @import "variables";
+@import 'mixins';
 @import "layout";
 @import "blocks/left";
 @import "blocks/right";
+@import "blocks/logo";
+@import "blocks/desc";
+@import 'blocks/clarification';
+@import 'blocks/price';
+@import 'blocks/social';

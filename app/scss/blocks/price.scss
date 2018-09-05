@@ -1,0 +1,37 @@
+.price {
+    @include roboto(regular);
+    margin-right: 21px;
+    width: 50%;
+}
+
+.price--opacity-50 {
+    opacity: 0.5;
+}
+
+.price__number {
+    font-size: rem(50px);
+    @include robotoSlab(light);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: rem(19px);
+    flex-wrap: nowrap;
+    &:after {
+        content: '';
+        display: block;
+        background: url('../images/icons/rub.svg') no-repeat;
+        width: 27px;
+        height: 35px;
+        background-size: contain;
+        margin-left: rem(11px);
+    }
+}
+
+.price__number--strike {
+    text-decoration: line-through;
+}
+
+.price__description {
+    font-size: rem(20px);
+    margin-bottom: 38px;
+}

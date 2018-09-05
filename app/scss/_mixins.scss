@@ -24,7 +24,7 @@
 }
 
 @mixin robotoSlab($style: light) {
-    font-family: 'OpenSans', Helvetica, sans-serif;
+    font-family: 'RobotoSlab', Helvetica, sans-serif;
     @if $style==light{
         font-weight: 300; 
     }
@@ -34,5 +34,5 @@
 }
 
 @function rem($px) {
-	@return $px / 16px*1rem;
+	@return $px / 15px*1rem;
 }
