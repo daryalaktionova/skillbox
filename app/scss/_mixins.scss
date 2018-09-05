@@ -1,0 +1,34 @@
+@mixin openSans($style: regular) {
+    font-family: 'OpenSans', Helvetica, sans-serif;
+    @if $style==regular{
+        font-weight: 300; 
+    }
+    @else if $style==semibold{
+        font-weight: 600; 
+    }
+    @else if $style==bold {
+        font-weight: 700;
+
+    }
+}
+
+@mixin roboto($style: regular) {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    @if $style==regular{
+        font-weight: 400; 
+    }
+    @else if $style==bold {
+        font-weight: 700;
+
+    }
+}
+
+@mixin robotoSlab($style: light) {
+    font-family: 'OpenSans', Helvetica, sans-serif;
+    @if $style==light{
+        font-weight: 300; 
+    }
+    @else if $style==regular{
+        font-weight: 400; 
+    }
+}
