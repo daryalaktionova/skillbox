@@ -26,7 +26,7 @@
 
 .error-text {
     color: $red;
-    font-size: 11px;
+    font-size: rem(11px);
 }
 
 .form__label:before {
@@ -42,7 +42,7 @@
 }
 
 .form__field-checkbox {
-    margin-top: 17px;
+    margin-top: rem(17px);
 }
 
 .form__label {
@@ -57,12 +57,12 @@
 }
 
 .btn-send {
-    margin-top: 32px;
+    margin-top: rem(32px);
     padding: rem(21px) rem(39px);
     color: $white;
     @include openSans(semibold);
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: rem(13px);
     background-color: $black;
     border: none;
     transition: .2s;
@@ -70,4 +70,8 @@
     &:hover {
         background-color: $black-active;
     }
+}
+
+.personal-link  {
+    text-decoration: none;
 }

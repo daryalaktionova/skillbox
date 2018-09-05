@@ -5,6 +5,9 @@
     padding: rem(50px) 0 0 rem(98px);
     display: flex;
     justify-content: flex-start;
+    @include tablets {
+        padding: rem(50px) 0 0 rem(40px);
+    }
 }
 
 .content--right {

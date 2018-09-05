@@ -55,6 +55,9 @@ p {
 	font-size: rem(30px);
 	margin-bottom: 27px;
 	white-space: nowrap;
+	@include tablets {
+		white-space: normal;
+	}
 }
 
 .row {

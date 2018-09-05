@@ -6,6 +6,9 @@
     display: flex;
     justify-content: flex-end;
     height: 100%;
+    @include tablets {
+        padding: rem(50px) rem(40px) rem(0px) rem(0px);
+    }
 }
 
 .content--left {

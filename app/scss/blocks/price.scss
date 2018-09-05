@@ -1,7 +1,10 @@
 .price {
     @include roboto(regular);
-    margin-right: 21px;
+    margin-right: rem(21px);
     width: 50%;
+    @include tablets {
+        min-width:50%;
+    }
 }
 
 .price--opacity-50 {
@@ -16,14 +19,21 @@
     align-items: center;
     margin-bottom: rem(10px);
     flex-wrap: nowrap;
+    @include tablets {
+        font-size: rem(36px);
+    }
     &:after {
         content: '';
         display: block;
         background: url('../images/icons/rub.svg') no-repeat;
-        width: 27px;
-        height: 35px;
+        width: rem(27px);
+        height: rem(35px);
         background-size: contain;
         margin-left: rem(11px);
+        @include tablets {
+            width: rem(18px);
+            height: rem(24px);
+        }
     }
 }
 
@@ -33,5 +43,5 @@
 
 .price__description {
     font-size: rem(20px);
-    margin-bottom: 38px;
+    margin-bottom: rem(38px);
 }
