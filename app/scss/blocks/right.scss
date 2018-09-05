@@ -8,8 +8,18 @@
     @include tablets {
         padding: rem(50px) 0 0 rem(40px);
     }
+    @include phones {
+        order: 1;
+        width: 100%;
+        padding: rem(50px) rem(30px) 0 rem(30px);
+        height: 100%;
+    }
 }
 
 .content--right {
     max-width: 90%;
+    height: 100%;
+    @include phones {
+        max-width: 100%;
+    }
 }
