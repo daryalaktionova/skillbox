@@ -107,22 +107,26 @@
 					<h2 class="h2">
 						Получи курс со скидкой
 					</h2>
+				</div>
 					<div class="form">
 						<form class="form__layout" id="myForm">
 							<div class="form__row">
-								<input type="text" class="form__input" id="name" name="name" required>
+								<input type="text" class="form__input" id="name" name="name" required placeholder="Введите ваше имя">
+								<div class="error-text">некорректный email</div>
 							</div>
 							<div class="form__row">
-								<input type="tel" class="form__input" id="tel" name="tel" required>
+								<input type="tel" class="form__input" id="tel" name="tel" required placeholder="Введите ваш телефон">
+								<div class="error-text"></div>
 							</div>
 							<div class="form__row">
-								<input type="email" class="form__input" id="email" name="email" required>
+								<input type="email" class="form__input" id="email" name="email" required placeholder="Введите ваш email">
+								<div class="error-text"></div>
 							</div>
 							<div class="form__row">
 								<div class="form__field-checkbox">
 									<input type="checkbox" class="form__checkbox" id="checkbox" hidden name="checkbox">
 									<label class="form__label" for="checkbox">
-										Я согласен с условиями обработки <span class="text--blue">персональных данных</span>
+										<p class="form__label-desc">Я согласен с условиями обработки <span class="text--blue">персональных данных</span></p>
 									</label>
 								</div>
 							</div>

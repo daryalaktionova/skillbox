@@ -1,0 +1,73 @@
+.form__input {
+    width: 100%;
+    height: rem(60px);
+    margin-top: rem(20px);
+    border: 2px solid $light-blue;
+    padding: rem(16px) rem(20px);
+    color: $dark-blue;
+    transition: .2s;
+    &:focus {
+        border: 2px solid $blue;
+    }
+}
+
+.form__input::-webkit-input-placeholder {
+    color: $light-blue-text;
+}
+.form__input::-moz-placeholder          {
+    color: $light-blue-text;
+}/* Firefox 19+ */
+.form__input:-moz-placeholder           {
+    color: $light-blue-text;
+}/* Firefox 18- */
+.form__input:-ms-input-placeholder      {
+    color: $light-blue-text;
+}
+
+.error-text {
+    color: $red;
+    font-size: 11px;
+}
+
+.form__label:before {
+    content: '';
+    width: rem(24px);
+    height: rem(24px);
+    background-color: $blue;
+    margin-right: rem(16px);
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0.2;
+    cursor: pointer;
+}
+
+.form__field-checkbox {
+    margin-top: 17px;
+}
+
+.form__label {
+    display: flex;
+    width: 95%;
+    cursor: pointer;
+}
+
+.form__checkbox:checked+.form__label:before {
+    background: $blue url('../images/icons/check.svg') no-repeat;
+    background-position: center;
+}
+
+.btn-send {
+    margin-top: 32px;
+    padding: rem(21px) rem(39px);
+    color: $white;
+    @include openSans(semibold);
+    text-transform: uppercase;
+    font-size: 13px;
+    background-color: $black;
+    border: none;
+    transition: .2s;
+    cursor: pointer;
+    &:hover {
+        background-color: $black-active;
+    }
+}

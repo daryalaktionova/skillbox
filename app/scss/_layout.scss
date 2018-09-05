@@ -46,12 +46,27 @@ p {
 .h1 {
 	@include openSans(bold);
 	margin-bottom: 20px;
+
+}
+
+.h2 {
+	font-size: rem(30px);
+	margin-bottom: 27px;
+	white-space: nowrap;
 }
 
 .row {
 	display: flex;
 	width: 100%;
 }
+
+.text--blue {
+	color: $blue;
+}
+
+
+
+
 
 
 

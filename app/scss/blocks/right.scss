@@ -1,12 +1,12 @@
 .right {
     background: $white;
     color: $black;
-    max-width: 50%;
+    width: 50%;
     padding: rem(50px) 0 0 rem(98px);
     display: flex;
     justify-content: flex-start;
 }
 
-.content--left {
+.content--right {
     max-width: 90%;
 }
