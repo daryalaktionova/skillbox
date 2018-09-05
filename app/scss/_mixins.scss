@@ -32,3 +32,7 @@
         font-weight: 400; 
     }
 }
+
+@function rem($px) {
+	@return $px / 16px*1rem;
+}
