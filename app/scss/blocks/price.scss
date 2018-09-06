@@ -22,6 +22,9 @@
     @include tablets {
         font-size: rem(36px);
     }
+    @include phones-small {
+        font-size: rem(26px);
+    }
     &:after {
         content: '';
         display: block;
@@ -33,6 +36,10 @@
         @include tablets {
             width: rem(18px);
             height: rem(24px);
+        }
+        @include phones-small {
+            width: rem(13px);
+            height: rem(18px);
         }
     }
 }

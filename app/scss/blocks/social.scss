@@ -17,17 +17,29 @@
     top: 0;
     left: 0;
     &--2 {
-        left: 10%;
+        left: 8%;
+        @include tablets {
+            left: 15%;
+        }
     }
     &--3 {
-        left: 20%; 
+        left: 16%; 
+        @include tablets {
+            left: 30%;
+        }
     }
     &--4 {
-        left: 30%;
+        left: 24%;
+        @include tablets {
+            left: 45%;
+        }
         
     }
     &--5 {
-        left: 40%;
+        left: 32%;
+        @include tablets {
+            left: 60%;
+        }
     }
 }
 
@@ -41,7 +53,7 @@
     width: 60%;
     @include tablets {
         margin-top: rem(13px);
-        width: 90%;
+        width: 100%;
     }
 }
 
