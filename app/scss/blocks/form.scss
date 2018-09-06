@@ -6,9 +6,6 @@
     padding: rem(16px) rem(20px);
     color: $dark-blue;
     transition: .2s;
-    &:focus {
-        border: 2px solid $blue;
-    }
 }
 
 .form__input::-webkit-input-placeholder {
@@ -78,4 +75,9 @@
 
 .personal-link  {
     text-decoration: none;
+}
+
+.error-text {
+    height: 16px;
+    transition: 0.2s;
 }
